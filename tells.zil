@@ -863,7 +863,7 @@ who untied me so I could type out this story.]|">
 			<SETG C-INTS <+ ,C-INTS ,C-INTLEN>>)>>>
 
 ;"call v-$refresh to during game if want to clear junk"
-<ROUTINE STATUS-LINE ("AUX" (PTR 0) CORE LEN TBL X)
+<ROUTINE STATUS-LINE ("AUX" (PTR 0) LEN X)
 	 
 	 <BUFOUT <>>
 	 <SCREEN ,S-WINDOW>

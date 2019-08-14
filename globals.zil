@@ -769,7 +769,7 @@ of the river and come back to shore." CR>)>);"and put on your shoes. NO"
 
 ;"RMUNGBIT = used as phrasebit for evil eye case in restaurant"
 
-<ROUTINE EYES-F ("AUX" ADJ)
+<ROUTINE EYES-F ()
 	 <COND (<OR <ADJ-USED ,EYES ,W?EVIL>
 		    <ADJ-USED ,EYES ,W?JAUNDICED>>
 		<COND (<AND <NOT <EQUAL? ,SCENE ,RESTAURANT>>
@@ -1643,7 +1643,7 @@ D ,JOAT " return." CR>)
 	(FLAGS READBIT TRYTAKEBIT)
 	(ACTION SIGN-F)>
 
-<ROUTINE SIGN-F ("AUX" NUM)
+<ROUTINE SIGN-F ()
 	 <COND ;(<AND <EQUAL? ,HERE ,CANAL>
 		     <NOT <EQUAL? .NUM 15>>>
 		<CANT-SEE ,SIGN>)

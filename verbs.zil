@@ -305,7 +305,7 @@ is a trademark of Infocom, Inc. ">
 		<TELL ,PERIOD>
 		<STOP>)>>
 
-<ROUTINE V-ASK-ABOUT ("AUX" OWINNER)
+<ROUTINE V-ASK-ABOUT ()
 	 <COND (<PRSO? ,ME>
 		<PERFORM ,V?TELL ,ME>
 		<RTRUE>)
@@ -1224,7 +1224,7 @@ buy it.\"" CR>
 	 <TELL " have no access to help in this session.]" CR>
 	 <RTRUE>>
 
-<ROUTINE V-IN ("AUX" VEHICLE)
+<ROUTINE V-IN ()
 	 <DO-WALK ,P?IN>>
 
 <ROUTINE V-INFLATE ()
@@ -2049,7 +2049,7 @@ when you have your " .STRING ". In fact, you have your "
 		<PERFORM ,V?WALK-TO ,PRSI> ;"ride obj to obj" 
 		<RTRUE>)>>
 
-<ROUTINE V-RIDE-TO ("AUX" V)
+<ROUTINE V-RIDE-TO ()
 	 <COND (<EQUAL? <LOC ,PROTAGONIST> ,CART ,ICICLE>
 		<PERFORM ,V?WALK-TO ,PRSO>)
 	       ;(<SET V <FIND-IN ,HERE ,VEHBIT>>
@@ -2328,7 +2328,7 @@ up in exactly the same spot as it was before." CR>)>>
 	 <PERFORM ,V?GIVE ,PRSI ,PRSO>
 	 <RTRUE>>
 
-<ROUTINE V-SHAKE ("AUX" PERSON)
+<ROUTINE V-SHAKE ()
 	 <COND (<FSET? ,PRSO ,ACTORBIT>
 		<TELL "That wouldn't be polite." CR>)
 	       ;(<EQUAL? ,PRSO ,HANDS> ;"in hands-f"
@@ -3145,7 +3145,7 @@ do better describing things. Ummm.... Let's see....
 
 ;"subtitle object manipulation"
 
-<ROUTINE ITAKE ("OPTIONAL" (VB T) "AUX" ;CNT OBJ)
+<ROUTINE ITAKE ("OPTIONAL" (VB T))
 	 <COND (<FSET? ,PRSO ,INTEGRALBIT>
 		<COND (.VB
 		       <PART-OF>)>

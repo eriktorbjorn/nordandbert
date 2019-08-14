@@ -653,7 +653,7 @@ the curser and text"
 		 "There's more than one sponge here."
 		 "Refer to Bob as a sponge.">>>
 
-<ROUTINE INIT-HINT-SCREEN ("AUX" WID LEN)
+<ROUTINE INIT-HINT-SCREEN ("AUX" WID)
 	 <SET WID <GETB 0 33>>
 	 <SPLIT 0>
 	 <CLEAR -1>
